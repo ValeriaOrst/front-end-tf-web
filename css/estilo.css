@@ -49,14 +49,13 @@ header, #principal, #second, #contato, #stream {
 }
 
 main {
-  background-color: #227119;
+  background-color: #fff;
   color: #ddd;
 }
 
 h1, h2 {
   font-family: 'Amatic SC';
   font-size: 40px;
-  text-align: end;
 }
 
 #frase-inicio{
@@ -441,90 +440,257 @@ ul, ol{
 
 
 
-
+/* Estilo da seção de Destaques */
 .destaques {
   text-align: center;
-  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #8B0000;
+  margin-top: 50px;
 }
 
 .destaques h2 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Amatic SC', sans-serif;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
-.destaques-container {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.destaques-carousel {
-  display: flex;
+.carousel-item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   overflow: hidden;
-  gap: 15px;
-}
-
-.destaques-slide {
-  min-width: 200px;
-  max-width: 200px;
-  transition: transform 0.5s ease;
-}
-
-.destaques-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.destaques-slide label {
-  display: block;
-  cursor: pointer;
-}
-
-input#slide1:checked ~ .destaques-carousel .destaques-slide:nth-child(1),
-input#slide2:checked ~ .destaques-carousel .destaques-slide:nth-child(2),
-input#slide3:checked ~ .destaques-carousel .destaques-slide:nth-child(3),
-input#slide4:checked ~ .destaques-carousel .destaques-slide:nth-child(4) {
-  transform: translateX(0);
-}
-
-input#slide2:checked ~ .destaques-carousel {
-  transform: translateX(-220px);
-}
-
-input#slide3:checked ~ .destaques-carousel {
-  transform: translateX(-440px);
-}
-
-input#slide4:checked ~ .destaques-carousel {
-  transform: translateX(-660px);
-}
-
-.controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
 
-.controls label {
-  font-size: 30px;
-  color: #000;
-  cursor: pointer;
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
   background-color: transparent;
   border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.controls label:hover {
+.carousel-button:hover {
   color: #0077cc;
 }
 
+/* Adicionando animação para o efeito de rolagem */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*
+.carousel-container {
+  animation: slide 15s infinite;
+}
+*/
+
+
+.menu li{
+  position:relative;
+  float:left;
+  border-right:1px solid #c0c0c0;
+  }
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:#fff;
+  display:none;
+  }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+  border:1px solid #c0c0c0;
+  display:block;
+  width:150px;
+  }
+
+
+/*
+*/
+.mini-banner{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #227119;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#imagem-mini-banner{
+  border-radius: 10px;
+  border-color: #000;
+  border: 2px solid #ccc;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 800px;
+}
+
+
+
+#container04{
+  box-shadow: none;
+}
+
+.contents{
+  display: flex;
+  flex: 3;
+  align-items: center;
+  gap: 100px;
+}
+
+
+.colun01{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #FF4081;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.colun02{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #C2185B;
+  height: 100%;
+}
+
+.colun03{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #ec4079de;
+  height: 100%;
+}
+
+.colun04{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #F48FB1;
+  height: 35vh;
+}
+
+.colun05{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #C2185B;
+  height: 50vh;
+}
+.colun06{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #AD1457;
+  height: 20vh;
+
+}
+
+.container{
+  width: 700px;
+  height: 400px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#negicin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  margin-top: 50px;
+}
+
+
+/* Ajuste para as colunas */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite adaptação para telas menores */
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coluna {
+  width: 200px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
+  border-radius: 30px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que a imagem não "vaze" */
+  background-color: #FF4081; /* Cor de fundo como no exemplo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coluna img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher todo o espaço */
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .coluna {
+    width: 90%; /* Ajusta largura para telas menores */
+    height: 300px; /* Reduz a altura em telas menores */
+  }
+}
