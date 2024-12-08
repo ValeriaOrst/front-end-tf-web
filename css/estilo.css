@@ -176,6 +176,7 @@ main #principal{
 p {
   text-align: justify;
   width: 460px;
+  align-items: end;
 }
 
 .cartaz{
@@ -799,4 +800,10 @@ article ul li{
   padding: 15px; /* espaçamento interno entre o conteúdo e a borda da li */
   font-size: 16px; /* ajusta o tamanho da fonte nas li com o tamanho padrão */
   vertical-align: top; /* alinha as li no topo da linha */
+}
+
+#coisas{
+  background-color: #000;
+  width: 400px;
+  height: 400px;
 }
