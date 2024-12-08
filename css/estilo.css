@@ -237,7 +237,6 @@ footer div div a:hover{
   border: 1px solid black;
 }
 
-
 #acesso{
   text-align: center;
   padding: 30px 60px;
@@ -291,40 +290,6 @@ ul, ol{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slideshow {
   position: relative;
   width: 100%;
@@ -368,22 +333,6 @@ ul, ol{
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*parte projeto*/
 
@@ -471,10 +420,6 @@ ul, ol{
 }
 
 /*até aqui ok*/
-
-
-
-
 
 /* Estilo da seção de Destaques */
 .destaques {
