@@ -694,3 +694,68 @@ text-shadow:0px 0px 5px #fff;
     height: 300px; /* Reduz a altura em telas menores */
   }
 }
+
+
+.menu-container-vertical {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu-item-vertical {
+  display: block;
+  width: 700px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item-vertical:hover {
+  background-color: black;
+  color: white;
+}
+
+
+article ul{
+  font-size: 0; /* elimina espaços entre as li */
+  background-color: transparent; /* fundo branco na ul, se for preciso */
+}
+
+article ul li img{
+  width: 100%; /* ajusta a largura da imagem dentro da li */
+  display: block; /* convertendo para block elimina espaço natural abaixo da imagem */
+}
+
+article ul, article ul li{ /* remove espaços e o bullet da ul e das li */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+article ul li{
+  display: inline-block;
+  width: 25%; /* divide a largura por 4 */
+  box-sizing: border-box; /* restringe o padding à área da li */
+  text-align: center; /* centraliza o conteúdo */
+  padding: 15px; /* espaçamento interno entre o conteúdo e a borda da li */
+  font-size: 16px; /* ajusta o tamanho da fonte nas li com o tamanho padrão */
+  vertical-align: top; /* alinha as li no topo da linha */
+}
