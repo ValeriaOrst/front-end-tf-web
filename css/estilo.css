@@ -68,6 +68,8 @@ header, #principal, #second, #contato, #stream {
 .b{
   background-color: white;
   color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .f {
   background-color: #e04b5a;
@@ -86,7 +88,7 @@ header, #principal, #second, #contato, #stream {
 }
 
 main {
-  background-color: #227119;
+  background-color: #4d7841;
   color: #ddd;
 }
 
@@ -105,8 +107,9 @@ h1, h2 {
 }
 
 footer {
-  background-color: #333;
+  background-color: #4d7841;
   color: #ddd;
+  margin-top: 20px;
 }
 
 /* Coisa */
@@ -158,10 +161,11 @@ figure img{
 main{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 main #principal{
-  padding: 30px;
+  padding: 50px;
   gap: 50px;
 }
 
@@ -258,6 +262,7 @@ footer div div a:hover{
 
 a{
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -339,7 +344,7 @@ ul, ol{
 
 /* Estilo geral do cabeçalho */
 .cabecalho {
-  background-color: #8B0000; /* Cor de fundo do cabeçalho (exemplo: vermelho) */
+  background-color: #4d7841; /* Cor de fundo do cabeçalho (exemplo: vermelho) */
   padding: 10px 0;
   width: 100%;
   box-sizing: border-box;
@@ -387,7 +392,7 @@ ul, ol{
 
 /* Menu */
 .cabecalho02 {
-  background-color: #00FFFF; /* Cor do fundo para o menu */
+  background-color: #89b67b; /* Cor do fundo para o menu */
   width: 100%;
   padding: 10px 0;
 }
@@ -403,20 +408,20 @@ ul, ol{
 
 .cabecalho02 nav ul li {
   padding: 10px 20px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: #89b67b;
   transition: 0.3s;
 }
 
 .cabecalho02 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: bold;
 }
 
 .cabecalho02 nav ul li:hover {
-  background-color: #0077cc;
+  background-color: #4d7841;
   color: #fff;
 }
 
@@ -426,7 +431,7 @@ ul, ol{
 .destaques {
   text-align: center;
   padding: 50px 0;
-  background-color: #8B0000;
+  background-color: #4d7841;
   margin-top: 50px;
 }
 
@@ -470,7 +475,7 @@ ul, ol{
 }
 
 .carousel-button:hover {
-  color: #0077cc;
+  color: #4d7841;
 }
 
 /* Adicionando animação para o efeito de rolagem */
@@ -495,10 +500,14 @@ ul, ol{
   border-right:1px solid #c0c0c0;
   }
 
-.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+.menu li a{
+  color:#333; 
+  text-decoration:none; 
+  padding:5px 10px; 
+  display:block;
+}
 
 .menu li a:hover{
-background:#333;
 color:#fff;
 box-shadow:0 3px 10px 0 #CCC;
 text-shadow:0px 0px 5px #fff;
@@ -529,7 +538,7 @@ text-shadow:0px 0px 5px #fff;
   align-items: center;
   width: 100%;
   height: 300px;
-  background-color: #227119;
+  background-color: #4d7841;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -544,7 +553,7 @@ text-shadow:0px 0px 5px #fff;
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 800px;
+  width: 1000px;
 }
 
 
@@ -626,6 +635,7 @@ text-shadow:0px 0px 5px #fff;
   align-items: center;
   color: #000;
   margin-top: 50px;
+  background-color: #4d7841;
 }
 
 
@@ -724,7 +734,7 @@ h1 {
   display: block;
   width: 700px;
   padding: 10px 20px;
-  border: 2px solid black;
+  border: 2px solid #89b67b;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -732,11 +742,14 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+  background-color: #89b67b;
 }
 
 .menu-item-vertical:hover {
-  background-color: black;
+  background-color: #4d7841;
   color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 
@@ -767,14 +780,19 @@ article ul li{
 }
 
 #coisas{
-  background-color: #000;
+  background-color: #89b67b;
   width: 400px;
   height: 400px;
 }
 
 #centro{
   text-align: center;
-  padding-top: 10px;
+  padding: 10px;
+  color: white;
+  font-size: xx-large;
+  background-color: #89b67b;
+  margin-top: 20px;
+  width: 100%;
 }
 
 #colorinfo{
@@ -972,8 +990,4 @@ button {
 .btn-cancel {
   background-color: #f44336;
   color: white;
-}
-
-button:hover {
-  opacity: 0.9;
 }
