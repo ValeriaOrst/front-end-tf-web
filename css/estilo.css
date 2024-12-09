@@ -871,7 +871,11 @@ table tr:hover {
   font-family: 'Amatic SC', sans-serif;
   margin-bottom: 20px;
   align-items: center;
-  color: white;
+  color: black;
+}
+
+#corzinha{
+  color: #000;
 }
 
 .edicao ul {
