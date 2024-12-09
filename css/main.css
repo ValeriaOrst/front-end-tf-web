@@ -94,6 +94,14 @@ input:focus {
   transition: background-color 0.3s ease;
 }
 
+.btn-login a{
+  color: white;
+}
+
+.btn-login a:hover{
+  color: black;
+}
+
 .btn-login:hover {
   background-color: #89b67b;
   color: #000;
