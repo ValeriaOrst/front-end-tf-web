@@ -865,6 +865,7 @@ table tr:hover {
   padding: 50px 0;
   background-color: #4d7841;
   margin-top: 50px;
+  color: white;
 }
 
 .edicao h2 {
@@ -872,6 +873,7 @@ table tr:hover {
   font-family: 'Amatic SC', sans-serif;
   margin-bottom: 20px;
   align-items: center;
+  color: white;
 }
 
 .edicao ul {
